@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Suwit Pop Art 🖐️✌️✊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <header class="game-header">
+            <h1>✊ SUWIT JEPANG ✌️</h1>
+            <p>Pilih senjatamu dan kalahkan rekor pilihan komputer!</p>
+        </header>
+
+        <div class="scoreboard">
+            <div class="score-box">
+                <span id="score-pemain">0</span>
+                <small>Kamu</small>
+            </div>
+            <div class="score-divider">VS</div>
+            <div class="score-box">
+                <span id="score-komputer">0</span>
+                <small>Komputer</small>
+            </div>
+        </div>
+
+        <div class="arena-duel">
+            <div class="arena-slot">
+                <div id="visual-pemain" class="emoji-placeholder">❓</div>
+                <p>Pilihanmu</p>
+            </div>
+            <div class="arena-slot">
+                <div id="visual-komputer" class="emoji-placeholder">❓</div>
+                <p>Komputer</p>
+            </div>
+        </div>
+
+        <div class="result-board">
+            <h2 id="txt-hasil">Tunggu apa lagi? Yuk main!</h2>
+        </div>
+
+        <div class="weapon-selection">
+            <button class="btn-weapon card-pink" data-choice="batu">
+                <span class="emoji">✊</span>
+                <span>Batu</span>
+            </button>
+            <button class="btn-weapon card-blue" data-choice="gunting">
+                <span class="emoji">✌️</span>
+                <span>Gunting</span>
+            </button>
+            <button class="btn-weapon card-yellow" data-choice="kertas">
+                <span class="emoji">🖐️</span>
+                <span>Kertas</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
