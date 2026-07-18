@@ -1,0 +1,179 @@
+:root {
+    --bg-light: #f1f5f9;
+    --panel-bg: #ffffff;
+    --text-dark: #1e293b;
+    --stroke-dark: #1e293b;
+    --pink: #ff477e;
+    --blue: #00f0ff;
+    --yellow: #ffb703;
+    --green: #06d6a0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-container {
+    background-color: var(--panel-bg);
+    padding: 35px 25px;
+    border-radius: 28px;
+    border: 3px solid var(--stroke-dark);
+    box-shadow: 6px 6px 0px var(--stroke-dark);
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+}
+
+.game-header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.game-header p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* Komponen Papan Skor */
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.score-box {
+    background-color: #f8fafc;
+    border: 2px solid var(--stroke-dark);
+    border-radius: 14px;
+    padding: 10px;
+    min-width: 75px;
+    box-shadow: 3px 3px 0px var(--stroke-dark);
+}
+
+.score-box span {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.score-box small {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+.score-divider {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--pink);
+}
+
+/* Arena Tampilan Gambar Pilihan */
+.arena-duel {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8fafc;
+    border: 2px solid var(--stroke-dark);
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.arena-slot p {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #64748b;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+.emoji-placeholder {
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #ffffff;
+    border: 2px solid var(--stroke-dark);
+    border-radius: 50%;
+    margin: 0 auto;
+    user-select: none;
+}
+
+/* Banner Papan Pengumuman */
+.result-board {
+    border: 3px solid var(--stroke-dark);
+    padding: 12px;
+    border-radius: 14px;
+    background-color: var(--bg-light);
+    margin-bottom: 25px;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#txt-hasil {
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+/* Navigasi Pilihan Kartu Tombol */
+.weapon-selection {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-weapon {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    border: 2px solid var(--stroke-dark);
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--stroke-dark);
+    outline: none;
+    font-size: 0.95rem;
+    font-weight: 800;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.card-pink { background-color: var(--pink); }
+.card-blue { background-color: var(--blue); }
+.card-yellow { background-color: var(--yellow); }
+
+.btn-weapon .emoji {
+    font-size: 2.2rem;
+    margin-bottom: 4px;
+}
+
+/* Animasi Pantulan Klik Pop Art */
+.btn-weapon:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px var(--stroke-dark);
+}
+
+.btn-weapon:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--stroke-dark);
+}
